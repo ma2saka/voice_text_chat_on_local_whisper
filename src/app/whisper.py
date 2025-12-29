@@ -23,6 +23,8 @@ def transcribe_audio(
     language: str,
     beam_size: int,
 ) -> str:
+    # TODO: ご視聴ありがとうございました対策として vad_filter をあとで試す
+    # https://github.com/SYSTRAN/faster-whisper?tab=readme-ov-file#vad-filter
     segments, _info = model.transcribe(
         audio,
         language=language,
