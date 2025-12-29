@@ -1,4 +1,4 @@
-# mic_and_whisper2
+# voice_text_chat_on_local_whisper
 
 マイク入力をリアルタイムで書き起こしし、分割チャンクではOpenAI応答まで行う実験用プロジェクトです。
 イベント駆動（ブロードキャスト）でワーカーを分離しています。
@@ -19,5 +19,3 @@ uv run -m app
 - `src/app/events.py`: イベントブローカー
 - `src/app/context.py`: 会話履歴・thinking
 - `src/app/bootstrap.py`: dotenv + CUDA準備
-
-詳しくは `docs/poc_log.md` を参照してください。
