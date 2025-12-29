@@ -12,8 +12,6 @@ dependencies = [
     "nvidia-cudnn-cu12>=9.17.1.4",
     "openai>=2.14.0",
     "python-dotenv>=1.2.1",
-    "pyttsx3>=2.99",
-    "rich>=14.2.0",
     "ruff>=0.14.10",
     "sounddevice>=0.5.3"
 ]
