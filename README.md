@@ -9,9 +9,10 @@ uv run -m app
 ```
 
 ## 必要なもの
-- Python 3.11
+- Python 3.13
 - `.env` に `OPENAI_API_KEY`
 - GPU利用時: `nvidia-cudnn-cu12`, `nvidia-cublas-cu12`
+- 触れるマイク入力
 
 ## ざっくり構成
 - `src/app/app.py`: 起動・ワーカー配線
