@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from queue import Empty, Queue
+from queue import Queue
 from threading import Event, Lock
 from typing import Iterable
 

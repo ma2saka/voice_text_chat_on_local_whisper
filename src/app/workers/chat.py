@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 from dataclasses import dataclass
 from queue import Empty, Queue
 from typing import Iterator, TypedDict
