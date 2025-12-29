@@ -1,5 +1,5 @@
 [project]
-name = "mic-and-whisper2"
+name = "voice_text_chat_on_local_whisper"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
