@@ -3,7 +3,7 @@ name = "voice_text_chat_on_local_whisper"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.13"
 dependencies = [
     "ctranslate2>=4.6.2",
     "faster-whisper>=1.2.1",
@@ -15,9 +15,7 @@ dependencies = [
     "pyttsx3>=2.99",
     "rich>=14.2.0",
     "ruff>=0.14.10",
-    "silero-vad>=6.2.0",
-    "sounddevice>=0.5.3",
-    "torch>=2.0.1",
+    "sounddevice>=0.5.3"
 ]
 
 [build-system]
