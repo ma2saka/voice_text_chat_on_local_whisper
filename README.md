@@ -1,0 +1,23 @@
+# mic_and_whisper2
+
+マイク入力をリアルタイムで書き起こしし、分割チャンクではOpenAI応答まで行う実験用プロジェクトです。
+イベント駆動（ブロードキャスト）でワーカーを分離しています。
+
+## Quick Start
+```
+uv run -m app
+```
+
+## 必要なもの
+- Python 3.11
+- `.env` に `OPENAI_API_KEY`
+- GPU利用時: `nvidia-cudnn-cu12`, `nvidia-cublas-cu12`
+
+## ざっくり構成
+- `src/app/app.py`: 起動・ワーカー配線
+- `src/app/workers/*`: 各ワーカー
+- `src/app/events.py`: イベントブローカー
+- `src/app/context.py`: 会話履歴・thinking
+- `src/app/bootstrap.py`: dotenv + CUDA準備
+
+詳しくは `docs/poc_log.md` を参照してください。

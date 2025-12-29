@@ -1,0 +1,27 @@
+[project]
+name = "mic-and-whisper2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ctranslate2>=4.6.2",
+    "faster-whisper>=1.2.1",
+    "numpy>=2.4.0",
+    "nvidia-cublas-cu12>=12.9.1.4",
+    "nvidia-cudnn-cu12>=9.17.1.4",
+    "openai>=2.14.0",
+    "python-dotenv>=1.2.1",
+    "pyttsx3>=2.99",
+    "rich>=14.2.0",
+    "silero-vad>=6.2.0",
+    "sounddevice>=0.5.3",
+    "torch>=2.0.1",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
